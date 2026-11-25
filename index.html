@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modem y Bluetooth | Presentación Profesional</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+  <style>
+    .reveal {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .reveal h1, .reveal h2, .reveal h3 {
+      background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% auto;
+      animation: gradientShift 4s ease infinite;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% center; }
+      50% { background-position: 100% center; }
+      100% { background-position: 0% center; }
+    }
+    .reveal .slides section {
+      background: radial-gradient(circle at 20% 50%, rgba(0,210,255,0.1), transparent 50%),
+                  radial-gradient(circle at 80% 20%, rgba(58,123,213,0.15), transparent 50%);
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 15px 0;
+      border: 1px solid rgba(0,210,255,0.3);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0,210,255,0.2);
+    }
+    .diff-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+    .diff-table th {
+      background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+      color: #000;
+      padding: 12px;
+    }
+    .diff-table td {
+      padding: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .diff-table tr:nth-child(even) { background: rgba(255,255,255,0.03); }
+    .icon { font-size: 2em; margin-right: 10px; }
+    .progress-bar {
+      height: 6px;
+      background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+      border-radius: 3px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Título -->
+      <section data-transition="zoom">
+        <h1>Modem y Bluetooth</h1>
+        <h3>Características • Usos • Historia • Diferencias</h3>
+        <p style="margin-top:40px; opacity:0.8;">Presentación Profesional</p>
+        <p style="font-size:0.6em; margin-top:60px;">Diseño visual dinámico</p>
+      </section>
+
+      <!-- Introducción -->
+      <section>
+        <h2>Introducción</h2>
+        <div class="card">
+          <p>El <strong>Modem</strong> y el <strong>Bluetooth</strong> son dos tecnologías fundamentales en la comunicación digital moderna.</p>
+          <p>Mientras el modem transformó la forma en que accedemos a Internet a través de líneas telefónicas, Bluetooth revolucionó la conectividad inalámbrica de corto alcance.</p>
+        </div>
+        <p class="fragment">Exploraremos sus características principales, usos, origen histórico y las diferencias clave entre ambos.</p>
+      </section>
+
+      <!-- Modem: Qué es -->
+      <section>
+        <h2><span class="icon">🗣️</span> ¿Qué es un Modem?</h2>
+        <div class="card">
+          <p><strong>MOdulador / DEModulador</strong></p>
+          <p>Dispositivo que convierte señales digitales en analógicas (y viceversa) para transmitir datos a través de medios analógicos como líneas telefónicas, cable o radio.</p>
+        </div>
+        <ul>
+          <li class="fragment">Modulación: digital → analógico</li>
+          <li class="fragment">Demodulación: analógico → digital</li>
+          <li class="fragment">Base de la conexión dial-up y broadband</li>
+        </ul>
+      </section>
+
+      <!-- Modem: Características -->
+      <section>
+        <h2>Características Principales del Modem</h2>
+        <div class="card fragment">
+          <h3>📊 Velocidad</h3>
+          <p>Desde 110 bps (Bell 101) hasta 56 kbps (V.90). Hoy en cable/DSL: Mbps a Gbps.</p>
+          <div class="progress-bar" style="width:70%;"></div>
+        </div>
+        <div class="card fragment">
+          <h3>🔌 Tipos de Conexión</h3>
+          <p>Dial-up, ADSL, Cable, Fibra, Móvil (3G/4G/5G modems).</p>
+        </div>
+        <div class="card fragment">
+          <h3>🔒 Protocolos</h3>
+          <p>V.34, V.90, V.92, DOCSIS, etc. Soporta full-duplex.</p>
+        </div>
+      </section>
+
+      <!-- Modem: Usos -->
+      <section>
+        <h2>Usos del Modem</h2>
+        <div class="card">
+          <ul>
+            <li class="fragment">🌐 Acceso a Internet dial-up (años 90-2000)</li>
+            <li class="fragment">🏠 Conexión broadband residencial (ADSL, Cable)</li>
+            <li class="fragment">📱 Modems móviles / dongles USB para datos celulares</li>
+            <li class="fragment">📡 Enlaces de radio y microondas</li>
+            <li class="fragment">💻 Gateways en redes empresariales</li>
+          </ul>
+        </div>
+        <p class="fragment">Hoy, casi todo dispositivo inalámbrico contiene un modem interno.</p>
+      </section>
+
+      <!-- Modem: Historia -->
+      <section>
+        <h2>Historia y Origen del Modem</h2>
+        <div class="card">
+          <p><strong>1950s - SAGE</strong><br>Primeros modems de producción masiva para el sistema de defensa aérea SAGE (AT&T Bell Labs). Bell 101: ~110 bps.</p>
+        </div>
+        <div class="card fragment">
+          <p><strong>1962 - Bell 103</strong><br>Primer modem comercial full-duplex a 300 bps. Estándar de la industria.</p>
+        </div>
+        <div class="card fragment">
+          <p><strong>1970s-1990s</strong><br>Hayes Smartmodem, 1200→2400→9600→14.4k→28.8k→56k. Auge del dial-up.</p>
+        </div>
+        <div class="card fragment">
+          <p><strong>Actualidad</strong><br>Los modems viven en WiFi, Bluetooth, celulares y enlaces de fibra/cable.</p>
+        </div>
+      </section>
+
+      <!-- Bluetooth: Qué es -->
+      <section>
+        <h2><span class="icon">🔊</span> ¿Qué es Bluetooth?</h2>
+        <div class="card">
+          <p>Estándar de comunicación inalámbrica de corto alcance basado en radiofrecuencia en la banda de 2.4 GHz.</p>
+          <p>Diseñado para reemplazar cables (RS-232) entre dispositivos cercanos con bajo consumo de energía.</p>
+        </div>
+        <ul>
+          <li class="fragment">Frequency hopping para evitar interferencias</li>
+          <li class="fragment">Perfiles para audio, datos, HID, etc.</li>
+          <li class="fragment">Gestionado por Bluetooth SIG</li>
+        </ul>
+      </section>
+
+      <!-- Bluetooth: Características -->
+      <section>
+        <h2>Características Principales de Bluetooth</h2>
+        <div class="card fragment">
+          <h3>⚡ Bajo Consumo</h3>
+          <p>Especialmente Bluetooth Low Energy (BLE). Ideal para wearables y IoT.</p>
+        </div>
+        <div class="card fragment">
+          <h3>📶 Alcance</h3>
+          <p>Clase 2: ~10m | Clase 1: hasta 100m+ (Bluetooth 5 puede superar 200m en condiciones ideales)</p>
+        </div>
+        <div class="card fragment">
+          <h3>📈 Velocidad</h3>
+          <p>1-3 Mbps clásico | Bluetooth 5: hasta 2 Mbps LE | Audio de alta calidad con LE Audio.</p>
+        </div>
+      </section>
+
+      <!-- Bluetooth: Usos -->
+      <section>
+        <h2>Usos del Bluetooth</h2>
+        <div class="card">
+          <ul>
+            <li class="fragment">🎧 Auriculares, altavoces y audio inalámbrico</li>
+            <li class="fragment">⌨️ Teclados, ratones y periféricos</li>
+            <li class="fragment">⌚ Smartwatches y wearables</li>
+            <li class="fragment">📱 Transferencia de archivos y tethering</li>
+            <li class="fragment">🏠 IoT, beacons y smart home</li>
+            <li class="fragment">🚗 Sistemas de audio en automóviles</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Bluetooth: Historia -->
+      <section>
+        <h2>Historia y Origen del Bluetooth</h2>
+        <div class="card">
+          <p><strong>Nombre</strong><br>Inspirado en el rey vikingo Harald “Bluetooth” Gormsson, quien unió Dinamarca y Noruega en el siglo X. El logo combina sus runas ᚼ + ᛒ.</p>
+        </div>
+        <div class="card fragment">
+          <p><strong>1994</strong><br>Concebido por Dr. Jaap Haartsen en Ericsson para reemplazar cables RS-232.</p>
+        </div>
+        <div class="card fragment">
+          <p><strong>1998</strong><br>Formación del Bluetooth SIG (Ericsson, Nokia, Intel, IBM, Toshiba).</p>
+        </div>
+        <div class="card fragment">
+          <p><strong>1999</strong><br>Publicación de Bluetooth 1.0. Primeros dispositivos comerciales en 2000-2001.</p>
+        </div>
+      </section>
+
+      <!-- Diferencias -->
+      <section>
+        <h2>Diferencias Clave</h2>
+        <table class="diff-table">
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Modem</th>
+              <th>Bluetooth</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="fragment">
+              <td>Propósito principal</td>
+              <td>Convertir digital ↔ analógico para redes de larga distancia</td>
+              <td>Comunicación inalámbrica de corto alcance entre dispositivos</td>
+            </tr>
+            <tr class="fragment">
+              <td>Medio</td>
+              <td>Cable telefónico, coaxial, fibra, radio celular</td>
+              <td>Radio 2.4 GHz (PAN)</td>
+            </tr>
+            <tr class="fragment">
+              <td>Alcance</td>
+              <td>Global (a través de infraestructura)</td>
+              <td>Típicamente 1-100 metros</td>
+            </tr>
+            <tr class="fragment">
+              <td>Consumo energía</td>
+              <td>Variable (mayor en móviles)</td>
+              <td>Muy bajo (especialmente BLE)</td>
+            </tr>
+            <tr class="fragment">
+              <td>Velocidad típica</td>
+              <td>56 kbps (dial-up) a Gbps (broadband)</td>
+              <td>1-3 Mbps (clásico)</td>
+            </tr>
+            <tr class="fragment">
+              <td>Origen</td>
+              <td>1950s (SAGE / AT&T)</td>
+              <td>1994-1999 (Ericsson / SIG)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Conclusión -->
+      <section data-transition="convex">
+        <h2>Conclusión</h2>
+        <div class="card">
+          <p>El <strong>Modem</strong> fue el puente que conectó el mundo digital con las redes analógicas existentes, permitiendo la expansión masiva de Internet.</p>
+          <p>El <strong>Bluetooth</strong> eliminó los cables en el entorno personal, creando ecosistemas de dispositivos inteligentes y portátiles.</p>
+        </div>
+        <p class="fragment" style="margin-top:40px; font-size:1.2em;">Dos tecnologías complementarias que transformaron la comunicación moderna.</p>
+        <p style="margin-top:50px; opacity:0.6;">¡Gracias por su atención!</p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      transition: 'slide',
+      backgroundTransition: 'fade',
+      center: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    });
+  </script>
+</body>
+</html>
